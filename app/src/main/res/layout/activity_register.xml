@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.RegisterActivity">
+<LinearLayout
+    android:layout_marginTop="75dp"
+    android:layout_marginLeft="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_phone_registered"
+        android:text="手機註冊"
+        android:textSize="13sp"
+        android:textColor="#282828"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="/"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_email_registr"
+        android:text="郵箱註冊"
+        android:textSize="13sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#282828"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/import_phone"
+        android:layout_marginTop="72dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/phone_input_and_choose"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ce_email"
+        android:layout_marginTop="72dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="請輸入郵箱號"
+            android:inputType="phone"
+            android:paddingRight="5dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tos"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="同意 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#C3A171"
+            android:text="《服務與隱私條款》"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_marginTop="60dp"
+        android:text="下一步"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

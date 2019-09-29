@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECECEC"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.ShaittoActivity">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="52dp"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:text="BTC (0.00)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_marginTop="19dp"
+            android:textColor="#222222"
+            android:textSize="13sp"
+            android:text="12345678798vdfshvb5dfz21v51df5z41vd0000512"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/im_twocode"
+            android:layout_marginTop="30dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+        <TextView
+            android:id="@+id/set_monmey"
+            android:text="設置收款金額"
+            android:layout_marginTop="32dp"
+            android:textSize="14dp"
+            android:textColor="#C9924A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+         <TextView
+             android:background="@mipmap/copay"
+             android:layout_marginTop="29dp"
+             android:layout_marginLeft="73dp"
+             android:layout_marginRight="73dp"
+             android:layout_width="match_parent"
+             android:layout_height="34dp" />
+    </LinearLayout>
+</LinearLayout>

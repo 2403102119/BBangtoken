@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/modify_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/modify_item"
+        android:background="@drawable/link_man"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="190dp">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="輸入數值開啟"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <EditText
+                android:id="@+id/et_number"
+                android:text=""
+                android:gravity="center"
+                android:hint="輸入數量"
+                android:textSize="14dp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/yes_fenzu"
+                android:textCursorDrawable="@null"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"/>
+            <EditText
+                android:id="@+id/et_password"
+                android:text=""
+                android:hint="輸入交易密碼"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#333333"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/yes_fenzu"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/link_wo"
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+            <View
+                android:background="#DCDCDC"
+                android:layout_marginTop="2.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <TextView
+                android:id="@+id/modify_yes"
+                android:text="確定"
+                android:textColor="#C9924A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

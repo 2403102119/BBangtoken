@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.LanguageActivity">
+    <TextView
+        android:background="@mipmap/yinying"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="91dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="繁體中文"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/chinese"
+                android:background="@drawable/language"
+                android:layout_width="20dp"
+                android:layout_marginRight="15dp"
+                android:button="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View android:layout_marginLeft="15dp"
+            android:background="#F1F1F1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="English"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/english"
+                android:background="@drawable/language"
+                android:layout_width="20dp"
+                android:layout_marginRight="15dp"
+                android:button="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

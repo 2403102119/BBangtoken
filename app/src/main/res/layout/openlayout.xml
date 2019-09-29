@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbangtoken.tckkj.com.bbangtoken.View.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    app:swipeEnable="true"
+    app:leftSwipe="true">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@drawable/biankuang3"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+            <ImageView
+                android:id="@+id/im_icon"
+                android:src="@mipmap/hangqing_labol"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="BTC"
+                android:layout_marginLeft="14dp"
+                android:textSize="17sp"
+                android:textColor="#282828"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_capital"
+                android:text="本金: 0.00"
+                android:textColor="#C9924A"
+                android:layout_marginLeft="67dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/chinese"
+                android:background="@drawable/opencheck"
+                android:layout_width="37dp"
+                android:layout_marginRight="15dp"
+                android:button="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_height="21dp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/delete"
+        android:background="@drawable/biankuang6"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:text="追加"
+        android:gravity="center"/>
+
+
+</bbangtoken.tckkj.com.bbangtoken.View.SwipeMenuLayout>
+
+

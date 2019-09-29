@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.LoginActivity">
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#ffffff"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:text="Welcome Back!"
+            android:textColor="#282828"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/phone"
+            android:layout_marginLeft="31dp"
+            android:layout_width="15dp"
+            android:layout_height="19dp" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_marginLeft="15dp"
+            android:background="#ffffff"
+            android:hint="手機號/郵箱"
+            android:textSize="13dp"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <View
+        android:background="#F3F2F7"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/password"
+            android:layout_marginLeft="31dp"
+            android:layout_width="15dp"
+            android:layout_height="19dp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginLeft="15dp"
+            android:background="#ffffff"
+            android:hint="登錄密碼"
+            android:textSize="13dp"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#F3F2F7"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+   <Button
+       android:id="@+id/bt_enter"
+       android:layout_marginTop="60dp"
+       android:text="登錄"
+       android:textColor="#FFFFFF"
+       android:textSize="15dp"
+       android:layout_gravity="center"
+       android:background="@mipmap/login"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_langlung"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="語言"
+                android:textColor="#C3A171"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/ll_forget_password"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="忘記密碼？"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_go_register"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="還沒有賬號？"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="去註冊"
+            android:textSize="14dp"
+            android:textColor="#C3A171"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

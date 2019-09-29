@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.PersonalActivity">
+    <bbangtoken.tckkj.com.bbangtoken.View.CircleImageView
+        android:id="@+id/iv_my_head"
+        android:src="@mipmap/touxiang"
+        android:layout_width="88dp"
+        android:layout_height="88dp"/>
+    <TextView
+        android:id="@+id/replace_the_picture"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="更換頭像"
+        android:background="@drawable/biankuang3"
+        android:layout_width="65dp"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:id="@+id/ll_nickname"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="暱稱"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tv_nicm"
+            android:text="致命春嬌"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:background="#ffffff"
+            android:gravity="right"
+            android:textCursorDrawable="@null"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#EAECF1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="賬號"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:layout_width="0dp"
+            android:layout_marginLeft="19dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_zhanghao"
+            android:text="188****8888"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_enter"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/baocun"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

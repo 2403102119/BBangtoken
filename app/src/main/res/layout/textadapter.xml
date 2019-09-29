@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_issue"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@mipmap/doubt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="如何查看我的收益？"
+            android:textSize="14sp"
+            android:textColor="#282828"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/control"
+            android:src="@mipmap/xiangxia"
+            android:layout_marginRight="15dp"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/huida"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_content"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:background="#E6E6E6"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

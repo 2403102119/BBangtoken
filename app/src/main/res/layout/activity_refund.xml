@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.RoolActivity">
+    <LinearLayout
+        android:id="@+id/ll_selec"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/biankuang3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+
+        <ImageView
+            android:id="@+id/im_icon"
+            android:src="@mipmap/btc_zhaunchu"
+            android:layout_marginLeft="12dp"
+            android:layout_width="41dp"
+            android:layout_height="41dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="BTC"
+                android:textSize="17sp"
+                android:textColor="#282828"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="≈$00.0"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="21dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="選擇幣種"
+                android:textColor="#282828"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <ImageView
+            android:src="@mipmap/guayu"
+            android:layout_marginRight="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_borr"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:text="需還數量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="1000.00"
+                android:textColor="#282828"
+                android:textSize="18sp"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="剩餘50天"
+                android:textColor="#C9924A"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:text="還款數量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                android:id="@+id/ce_refound"
+                android:hint="輸入還款數量"
+                android:textColor="#282828"
+                android:background="#ffffff"
+                android:textSize="18sp"
+                android:textCursorDrawable="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="BTC"
+                android:textColor="#282828"
+                android:textSize="14sp"
+                android:layout_marginRight="31dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="全部"
+                android:textSize="14sp"
+                android:textColor="#C9924A"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:text="剩餘還款數量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="5.00"
+                android:textColor="#FF4D4D"
+                android:background="#ffffff"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="BTC"
+                android:textSize="14sp"
+                android:textColor="#282828"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/confirm_the_payment"
+        android:layout_marginTop="60dp"
+        android:text="確認還款"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

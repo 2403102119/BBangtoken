@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/add_item_lin"
+    android:gravity="center"
+    android:background="#66000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/add_popuo"
+        android:background="@drawable/link_man"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="190dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+        <TextView
+            android:text="設置新密碼"
+            android:textSize="15sp"
+            android:textColor="#282828"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/mingzi"
+                android:textSize="14sp"
+                android:hint="輸入新密碼"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:textCursorDrawable="@null"
+
+                android:background="@drawable/yes_fenzu"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <EditText
+                android:id="@+id/con_pass"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:hint="確認新密碼"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+
+                android:background="@drawable/yes_fenzu"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/link_wo"
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+            <TextView
+                android:id="@+id/cancel"
+                android:text="取消"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:background="#DCDCDC"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+
+            </View>
+            <TextView
+                android:id="@+id/confirm"
+                android:text="確定"
+                android:textColor="#C9924A"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

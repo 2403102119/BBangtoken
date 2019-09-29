@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.SearchActivity">
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/searchLayer">
+        <ImageView
+            android:id="@+id/im_back"
+            android:src="@mipmap/return_im"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_padding_gray_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="17dp">
+
+            <ImageView
+                android:id="@+id/im_seek"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_sousuo" />
+
+            <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textCursorDrawable="@null"
+                android:hint="請輸入幣種名稱搜索"
+                android:textColor="@color/black"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:paddingBottom="2dp"
+                android:background="@null"
+                android:id="@+id/words"/>
+
+        </LinearLayout>
+        <TextView
+            android:padding="5dp"
+            android:text="取消"
+            android:textSize="13dp"
+            android:textColor="#999999"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="21dp"
+            android:id="@+id/iv_index_qiehuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_history"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@mipmap/yinying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="搜索歷史"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginLeft="14dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/delate_im"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="31dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="EOS"
+                android:textColor="#C9924A"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="BTC"
+                android:textColor="#C9924A"
+                android:textSize="12sp"
+                android:layout_marginLeft="48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

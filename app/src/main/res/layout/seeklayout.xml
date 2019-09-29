@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_seek"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_Seek"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="#282828"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <LinearLayout
+        android:id="@+id/ll_currency"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/im_icon"
+            android:layout_marginLeft="27dp"
+            android:src="@mipmap/jiashuju"
+            android:layout_width="24dp"
+            android:layout_height="34dp" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="BTC"
+            android:layout_marginLeft="14dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="#E5E5E5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

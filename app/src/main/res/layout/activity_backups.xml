@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.BackupsActivity">
+  <TextView
+      android:textColor="#FF4D4D"
+      android:textSize="12dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="52dp"
+      android:text="請按照順序點擊你的助記詞，以便確認助記詞的正確性"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/beijing"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/word_item"
+            android:textColor="#282828"
+            android:textSize="14sp"
+            android:text="FQD 5S ,"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_marginTop="34dp"
+        android:text="選擇助記詞"
+        android:gravity="center"
+        android:textColor="#C3A171"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/biankuang"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_marginTop="20dp"
+        android:text="下一步"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

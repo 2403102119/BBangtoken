@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    tools:ignore="NestedWeights,RtlHardcoded,SmallSp,ContentDescription,RtlSymmetry,HardcodedText,UseCompoundDrawables,DisableBaselineAlignment" >
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#ffffff"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:id="@+id/searchLayer">
+            <LinearLayout
+                android:id="@+id/ll_seek"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_padding_gray_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@mipmap/ic_sousuo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textCursorDrawable="@null"
+                    android:hint="請輸入幣種名稱搜索"
+                    android:textColor="@color/black"
+                    android:textColorHint="#999999"
+                    android:textSize="12sp"
+                    android:paddingBottom="2dp"
+                    android:background="@null"
+                    android:id="@+id/words"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="21dp"
+                android:id="@+id/iv_index_qiehuan"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/saoma" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:background="#F7F7F7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:background="@mipmap/btc"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="141dp">
+        <TextView
+            android:text="總資產（$）"
+            android:textColor="#C9924A"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/moeney"
+            android:layout_marginTop="10dp"
+            android:text="252000.00 "
+            android:layout_marginLeft="20dp"
+            android:textColor="#F8F2A0"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="19dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:layout_marginLeft="28dp"-->
+            <!--android:src="@mipmap/gonggao"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_set"-->
+            <!--android:textSize="13sp"-->
+            <!--android:layout_marginLeft="11dp"-->
+            <!--android:textColor="#C9924A"-->
+            <!--android:marqueeRepeatLimit="marquee_forever"-->
+            <!--android:focusable="true"-->
+            <!--android:scrollbars="vertical"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="1.0正式上線！幣幣交易、幣幣商城等更多內容詳..."-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+    <include
+        layout="@layout/item_scroll_loan"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

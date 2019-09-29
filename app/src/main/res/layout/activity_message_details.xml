@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.Message_detailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="6.13晚間行情：BTC震蕩延續 這些主流幣或將接棒扛大旗"
+                android:lineSpacingMultiplier="1.8"
+                android:textSize="19sp"
+                android:textColor="#282828"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="2019-05-13 08:00:00 "
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="14dp"
+                android:textSize="12sp"
+                android:textColor="#9EA5A9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_context"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="27dp"
+                android:text="BTC經過前天和昨天連續兩天逼空式的上漲，使得BTC在走勢上出現了正乖離大，偏離5日均線過快過遠，持幣者短期獲利豐厚就會引來抛壓，主力借機洗盤。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:src="@mipmap/details_about_the_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="27dp"
+                android:text="BTC經過前天和昨天連續兩天逼空式的上漲，使得BTC在走勢上出現了正乖離大，偏離5日均線過快過遠，持幣者短期獲利豐厚就會引來抛壓，主力借機洗盤。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:src="@mipmap/details_about_the_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="19dp"
+                android:text="偏離5日均線過快過遠，持幣者短期獲利豐厚就會引來抛壓，主力借機洗盤。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

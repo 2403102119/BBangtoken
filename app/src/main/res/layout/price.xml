@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/details_currency"
+    android:orientation="horizontal"
+    android:layout_marginTop="33dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/im_icon"
+        android:layout_marginLeft="12dp"
+        android:src="@mipmap/hangqing_labol"
+        android:layout_gravity="center"
+        android:layout_width="22dp"
+        android:layout_height="22dp" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="BTC"
+                android:textSize="15sp"
+                android:textColor="#282828"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text=" / "
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="USDT"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="Bitcoin"
+            android:layout_marginTop="8dp"
+            android:textSize="11sp"
+            android:textColor="#959595"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginLeft="55dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:text="3838.00"
+            android:textColor="#282828"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_close"
+            android:text="$25719.00"
+            android:textColor="#959595"
+            android:textSize="11sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_limit"
+        android:background="@drawable/hong"
+        android:layout_gravity="center"
+        android:text="-0.34%"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="12dp"
+        android:layout_width="63dp"
+        android:layout_height="25dp" />
+</LinearLayout>

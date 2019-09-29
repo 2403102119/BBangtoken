@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.SiteActivity">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/site"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="26dp"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:text="沒有更多數據"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

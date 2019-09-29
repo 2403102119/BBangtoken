@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/home_round_conrner"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <!--<View-->
+    <!--android:layout_width="6dp"-->
+    <!--android:layout_height="6dp"-->
+    <!--android:background="@drawable/blue_circle"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="8dp"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/gonggao"/>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0正式上線！幣幣交易、幣幣商城等更多內容詳..."
+        android:textColor="#C9924A"
+        android:textSize="11sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_gray"
+        android:textSize="11sp"/>
+
+</LinearLayout>

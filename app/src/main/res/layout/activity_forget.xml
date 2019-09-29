@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.ForgetActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="30dp"
+                android:text="BBangToken"
+                android:textColor="#282828"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="43dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="密碼類型"
+                    android:textColor="#C3A171"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="#E5E5E5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"/>
+                <TextView
+                    android:id="@+id/tv_login_password"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ffffff"
+                    android:text="登錄密碼"
+                    android:textSize="13dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/im_down"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/down"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:background="#E5E5E5"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_marginTop="43dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/forget_key"
+                    android:textColor="#C3A171"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                    android:id="@+id/private_key"
+                    android:layout_marginLeft="15dp"
+                    android:textCursorDrawable="@null"
+                    android:background="#ffffff"
+                    android:hint="輸入私鑰"
+                    android:textSize="13dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <View
+                android:background="#E5E5E5"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#FF4D4D"
+                android:text="請輸入私鑰找回密碼，忘記私鑰將無法找回，請牢記您的私鑰，并將其記在安全的地方。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_next_step"
+                android:layout_marginTop="60dp"
+                android:text="下一步"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/login"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.Registration_detailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="73dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/yzm" />
+
+                <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                    android:id="@+id/yzm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center_vertical"
+                    android:hint="輸入驗證碼"
+                    android:inputType="phone"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/gc_code"
+                    android:layout_width="60dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/yzm_item"
+                    android:text="獲取" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="#E6E6E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/lock" />
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword"
+                    android:gravity="center_vertical"
+                    android:hint="設置8-20位字母+數字登錄密碼"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="#E6E6E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/lock" />
+
+                <EditText
+                    android:id="@+id/notarize_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword"
+                    android:gravity="center_vertical"
+                    android:hint="確認登錄密碼"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="#E6E6E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/lock" />
+
+                <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                    android:id="@+id/deal_paw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword|phone"
+
+                    android:gravity="center_vertical"
+                    android:hint="設置6位純數字交易密碼"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="#E6E6E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/lock" />
+
+                <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                    android:id="@+id/seal_deal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="確認交易密碼"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword|phone"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="#E6E6E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/invite_code" />
+
+                <EditText
+                    android:id="@+id/invit_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="請輸入邀請碼"
+                    android:textCursorDrawable="@null"
+
+                    android:paddingRight="5dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="11dp"
+                android:background="#E6E6E6" />
+
+            <Button
+                android:id="@+id/registeron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53dp"
+                android:background="@mipmap/login"
+                android:text="註冊" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

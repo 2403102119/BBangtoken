@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.LookActivity">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="私鑰"
+            android:textColor="#282828"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_key"
+        android:layout_marginTop="18dp"
+        android:textColor="#282828"
+        android:textSize="12sp"
+        android:text="124563987qwertyuiopasdfghjklqwertyuiopasdfghjkloinbvcgg"
+        android:paddingLeft="11dp"
+        android:paddingRight="12dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/biankuang2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <TextView
+        android:layout_marginTop="34dp"
+        android:text="複製私鑰"
+        android:gravity="center"
+        android:textColor="#C3A171"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/biankuang"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_marginTop="20dp"
+        android:text="去登陆"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

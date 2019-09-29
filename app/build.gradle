@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "bbangtoken.tckkj.com.bbangtoken"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "ba1ba2e93bcc0ab10dc75907", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            aaptOptions.cruncherEnabled = false
+
+            aaptOptions.useNewCruncher = false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+allprojects {
+    repositories {
+        jcenter();
+        maven { url "https://jitpack.io" }//必须添加这行
+
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation files('libs/utdid4all-1.1.5.3_proguard.jar')
+    implementation files('libs/SecurityEnvSDK-release-1.1.0.jar')
+    implementation 'com.android.support:recyclerview-v7:27.0.1'
+    implementation 'com.alibaba:fastjson:1.2.44'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.github.bumptech.glide:glide:4.5.0'
+    compile(name: 'AndroidSDKV40ll20180903', ext: 'aar')
+    compile 'com.google.code.gson:gson:2.7'
+
+    /*agentweb*/
+    compile 'com.just.agentweb:agentweb:4.0.2'
+    compile 'com.just.agentweb:download:4.0.2'
+    // (可选)
+    compile 'com.just.agentweb:filechooser:4.0.2'
+    // (可选)
+    /*仿IOS滚轮*/
+    compile(name: 'loopview-debug', ext: 'aar')
+    implementation(name: 'banner-1.4.9', ext: 'aar')
+    compile 'com.mylhyl:acp:1.2.0'
+    implementation files('libs/BASE64Encoder.jar')
+//    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.mylhyl:acp:1.2.0'
+
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    implementation project(path: ':kchartlib')
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    //    /*二维码*/
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    //websocket
+    implementation 'com.github.0xZhangKe:WebSocketDemo:3.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+}

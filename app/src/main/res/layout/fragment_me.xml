@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:ignore="NestedWeights,UselessParent,ScrollViewSize,RtlHardcoded,SmallSp,RelativeOverlap,ContentDescription,HardcodedText,UseCompoundDrawables,DisableBaselineAlignment,RtlSymmetry">
+
+    <ScrollView
+        android:background="#F7F7F7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F7F7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/me"
+                    android:textSize="18sp"
+                    android:id="@+id/me_bg"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp">
+                    <TextView
+                        android:id="@+id/m_phone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="21dp"
+                        android:layout_height="wrap_content"
+                        android:text="致命春嬌"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24dp"
+
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:src="@mipmap/touxiang"
+                        android:layout_marginRight="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/logo"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_coin_melts"
+                    android:layout_marginTop="137dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/biankuang3"
+                    android:layout_width="165dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:src="@mipmap/my_coins"
+                        android:layout_marginLeft="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="幣融"
+                            android:textSize="14sp"
+                            android:textColor="#282828"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_amount"
+                            android:text="已借金額：1000.00"
+                            android:textSize="11sp"
+                            android:textColor="#999999"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/open_dog"
+                    android:layout_marginTop="137dp"
+                    android:background="@drawable/biankuang3"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="165dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:src="@mipmap/dog"
+                        android:layout_marginLeft="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="智能狗"
+                            android:textSize="14sp"
+                            android:textColor="#282828"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_principal"
+                            android:text="我的本金：1000.00"
+                            android:textSize="11sp"
+                            android:textColor="#999999"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+              <LinearLayout
+                  android:layout_marginTop="10dp"
+                  android:background="@drawable/biankuang3"
+                  android:layout_width="match_parent"
+                  android:layout_marginLeft="20dp"
+                  android:orientation="vertical"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="100dp">
+                  <LinearLayout
+                      android:id="@+id/site"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:gravity="center_vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp">
+                      <TextView
+                          android:text="常用地址簿"
+                          android:textSize="14sp"
+                          android:textColor="#282828"
+                          android:layout_marginLeft="15dp"
+                          android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content" />
+                      <ImageView
+                          android:src="@mipmap/guayu"
+                          android:layout_marginRight="15dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                  </LinearLayout>
+                  <View
+                      android:background="#E6E6E6"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginRight="15dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                  <LinearLayout
+                      android:id="@+id/messagerie"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:gravity="center_vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp">
+                      <TextView
+                          android:text="站內消息"
+                          android:textSize="14sp"
+                          android:textColor="#282828"
+                          android:layout_marginLeft="15dp"
+                          android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content" />
+                      <ImageView
+                          android:background="@drawable/circle_state"
+                          android:layout_marginRight="10dp"
+                          android:layout_width="6dp"
+                          android:layout_height="6dp" />
+                      <ImageView
+                          android:src="@mipmap/guayu"
+                          android:layout_marginRight="15dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />
+
+                  </LinearLayout>
+
+              </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_popularize"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/biankuang3"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:text="推廣邀請"
+                    android:textSize="14sp"
+                    android:textColor="#282828"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/guayu"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/biankuang3"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:id="@+id/my_friend"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="我的好友"
+                        android:textSize="14sp"
+                        android:textColor="#282828"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@mipmap/guayu"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:background="#E6E6E6"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:id="@+id/earnings"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="我的收益"
+                        android:textSize="14sp"
+                        android:textColor="#282828"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@mipmap/guayu"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:background="#E6E6E6"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:id="@+id/ll_help"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="幫助中心"
+                        android:textSize="14sp"
+                        android:textColor="#282828"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@mipmap/guayu"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:background="#E6E6E6"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:id="@+id/system_setup"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="系統設置"
+                        android:textSize="14sp"
+                        android:textColor="#282828"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="資料、安全設置"
+                        android:textSize="13sp"
+                        android:textColor="#B7BAC3"
+                        android:layout_marginRight="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@mipmap/guayu"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

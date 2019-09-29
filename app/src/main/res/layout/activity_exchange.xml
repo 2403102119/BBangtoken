@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.ExchangeActivity">
+    <LinearLayout
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/biankuang3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+
+    <ImageView
+        android:src="@mipmap/im_hei"
+        android:layout_marginLeft="12dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp" />
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="BBC"
+            android:textSize="17sp"
+            android:textColor="#282828"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="21dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="500.00"
+            android:textColor="#282828"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="≈$10000.00"
+            android:layout_marginTop="9dp"
+            android:layout_gravity="left"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:text="選擇兌換幣種"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_token"
+                android:text="BTC"
+                android:textColor="#282828"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/select_the_currency"
+                android:src="@mipmap/phone_back"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:text="兑换數量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <bbangtoken.tckkj.com.bbangtoken.View.ClearEditText
+                android:id="@+id/ce_targrt"
+                android:hint="輸入兑换數量"
+                android:textColor="#282828"
+                android:background="#ffffff"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="BBC"
+                android:textColor="#282828"
+                android:textSize="14sp"
+                android:layout_marginRight="31dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="全部"
+                android:textSize="14sp"
+                android:textColor="#C9924A"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#282828"
+            android:text="可兌換幣數量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_kedui"
+                android:text="0.05"
+                android:textColor="#282828"
+                android:background="#ffffff"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="BTC"
+                android:textSize="14sp"
+                android:textColor="#282828"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_conterl"
+        android:layout_marginTop="60dp"
+        android:text="确认兑换"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

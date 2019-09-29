@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="bbangtoken.tckkj.com.bbangtoken.Activity.MnemonicActivity">
+    <TextView
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="12sp"
+        android:textColor="#FF4D4D"
+        android:text="請將它準確的抄寫到紙上，并存放在只有你知道的安全地方"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="19dp"
+        android:background="@mipmap/zhujici"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:id="@+id/word"
+            android:textColor="#99808E"
+            android:textSize="23sp"
+            android:text="LJ 29S ,"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <!--<TextView-->
+            <!--android:textColor="#99808E"-->
+            <!--android:textSize="23sp"-->
+            <!--android:text="FQD 5S ,"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<TextView-->
+            <!--android:textColor="#99808E"-->
+            <!--android:textSize="23sp"-->
+            <!--android:text="VV78C ,"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+        <!--<TextView-->
+            <!--android:textColor="#99808E"-->
+            <!--android:textSize="23sp"-->
+            <!--android:text="6QbDV"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_marginTop="100dp"
+        android:text="下一步"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
